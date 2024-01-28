@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="menu-container">
+            <!-- Icône du menu burger -->
+            <div class="burger-menu" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        
+            <!-- Liste des liens de navigation -->
+            <ul class="nav-menu">
+                <li><a href="index.html">Menu</a></li>
+                <li><a href="formulaire.html">Formulaire</a></li>
+                <li><a href="films.html">Films</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+
+    <main>
+        <button id="Dark_Mode">Dark mode</button>
+        <form action="">
+            <fieldset id="identite">
+                <legend>Identité</legend>
+                <label for="nom">Nom</label>
+                <input type="text" id="nom">
+
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom">
+
+                <label for="mail">Mail</label>
+                <input type="email" id="mail">
+
+                <label for="mdp">Mot de passe</label>
+                <input type="password" id="mdp">
+                <p id="mdpErreur" class="erreur"></p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Genre</legend>
+                <label for="f">Femme</label>
+                <input type="radio" id="f" name="genre" value="Femme">
+                <label for="h">Homme</label>
+                <input type="radio" id="h" name="genre" value="Homme">
+                <label for="t">Tortue</label>
+                <input type="radio" id="t" name="genre" value="Tortue">
+                <p id="genreErreur" class="erreur"></p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Pays</legend>
+                <select name="" id="pays">
+                    <option value="France">France</option>
+                    <option value="Canarie">Canarie</option>
+                    <option value="Australie">Australie</option>
+                    <option value="Espagne">Espagne</option>
+                    <option value="Pacifique">Pacifique</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Bouton activité</legend>
+                <label for="">Marcher</label>
+                <input type="checkbox" name="choix">
+                <label for="">Courir</label>
+                <input type="checkbox" name="choix">
+                <label for="">Ramper</label>
+                <input type="checkbox" name="choix">
+                <p id="activiteErreur" class="erreur"></p>
+            </fieldset>
+
+            <fieldset id="info_formulaire">
+                <legend>Information complémentaire</legend>
+                <label for="date_anniv">Date de naissance</label>
+                <input type="date" id="date_anniv">
+
+                <label for="adresse">Adresse</label>
+                <input type="text" id="adresse">
+
+                <label for="telephone">Numéro de téléphone</label>
+                <input type="tel" id="telephone" placeholder="11-22-3333" pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}" required>
+                <small>Format : 11-22-3333</small>
+            </fieldset>
+
+            <input type="submit" value="Valider" id="valider">
+            <input type="reset" value="Effacer">
+        </form>
+
+
+        <div id="info">
+            <img src="" alt="" id="photo_info">
+            <p id="prenom_info">Prénom : </p>
+            <p id="nom_info">Nom : </p>
+            <p id="mail_info">Mail : </p>
+            <p id="genre_info">Genre : </p>
+            <p id="pays_info"> Pays : </p>
+            <p id="anniv_info">Date d'anniversaire : </p>
+            <p id="adresse_info">Adresse : </p>
+            <p id="tel_info">Téléphone : </p>
+        </div>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

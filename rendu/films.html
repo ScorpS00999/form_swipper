@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="menu-container">
+            <!-- Icône du menu burger -->
+            <div class="burger-menu" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        
+            <!-- Liste des liens de navigation -->
+            <ul class="nav-menu">
+                <li><a href="index.html">Menu</a></li>
+                <li><a href="index.html">Formulaire</a></li>
+                <li><a href="films.html">Films</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+
+    <main>
+
+        <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30"
+        loop="true">
+        <swiper-slide><img src="img/84T4I.webp" alt=""></swiper-slide>
+        <swiper-slide><img src="img/affiche-film-joker.jpg" alt=""></swiper-slide>
+        <swiper-slide><img src="img/avatar-la-voie-de-leau-affiche-principale.jpeg" alt=""></swiper-slide>
+        <swiper-slide><img src="img/Jurassic-World-Le-monde-dapres.jpg" alt=""></swiper-slide>
+        <swiper-slide><img src="img/le-regne-animal.jpg" alt=""></swiper-slide>
+        <swiper-slide><img src="img/s-l1200.webp" alt=""></swiper-slide>
+        <swiper-slide><img src="img/s-l1600.jpg" alt=""></swiper-slide>
+        </swiper-container>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+        <button id="Dark_Mode">Dark mode</button>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
